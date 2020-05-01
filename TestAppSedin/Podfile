@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TestAppSedin' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TestAppSedin
+pod 'Alamofire'
+
+  target 'TestAppSedinTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TestAppSedinUITests' do
+    # Pods for testing
+  end
+
+end
