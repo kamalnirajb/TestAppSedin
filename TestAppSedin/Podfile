@@ -6,8 +6,8 @@ target 'TestAppSedin' do
   use_frameworks!
 
   # Pods for TestAppSedin
-pod 'Alamofire'
-
+  pod 'Alamofire'
+  
   target 'TestAppSedinTests' do
     inherit! :search_paths
     # Pods for testing

@@ -8,30 +8,29 @@
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 // To parse the JSON, add this file to your project and do:
 //
-//   let issues = try? newJSONDecoder().decode(Issues.self, from: jsonData)
 
 import Foundation
 
 // MARK: - Issue
 struct Issue: Codable {
     let id: Int
-    let nodeID: String
-    let url, repositoryURL: String
-    let labelsURL: String
-    let commentsURL, eventsURL, htmlURL: String
+    let nodeID: String?
+    let url, repositoryURL: String?
+    let labelsURL: String?
+    let commentsURL, eventsURL, htmlURL: String?
     let number: Int
-    let state, title, body: String
-    let user: Assignee
+    let state, title, body: String?
+    let user: Assignee?
     let labels: [Label]
-    let assignee: Assignee
+    let assignee: Assignee?
     let assignees: [Assignee]
-    let milestone: Milestone
+    let milestone: Milestone?
     let locked: Bool
-    let activeLockReason: String
+    let activeLockReason: String?
     let comments: Int
-    let pullRequest: PullRequest
-    let closedAt: JSONNull?
-    let createdAt, updatedAt: Date
+    let pullRequest: PullRequest?
+    let closedAt: String?
+    let createdAt, updatedAt: String?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -54,17 +53,17 @@ struct Issue: Codable {
 
 // MARK: - Assignee
 struct Assignee: Codable {
-    let login: String
+    let login: String?
     let id: Int
-    let nodeID: String
-    let avatarURL: String
-    let gravatarID: String
-    let url, htmlURL, followersURL: String
-    let followingURL, gistsURL, starredURL: String
-    let subscriptionsURL, organizationsURL, reposURL: String
-    let eventsURL: String
-    let receivedEventsURL: String
-    let type: String
+    let nodeID: String?
+    let avatarURL: String?
+    let gravatarID: String?
+    let url, htmlURL, followersURL: String?
+    let followingURL, gistsURL, starredURL: String?
+    let subscriptionsURL, organizationsURL, reposURL: String?
+    let eventsURL: String?
+    let receivedEventsURL: String?
+    let type: String?
     let siteAdmin: Bool
 
     enum CodingKeys: String, CodingKey {
@@ -91,9 +90,9 @@ struct Assignee: Codable {
 // MARK: - Label
 struct Label: Codable {
     let id: Int
-    let nodeID: String
-    let url: String
-    let name, labelDescription, color: String
+    let nodeID: String?
+    let url: String?
+    let name, labelDescription, color: String?
     let labelDefault: Bool
 
     enum CodingKeys: String, CodingKey {
@@ -108,16 +107,16 @@ struct Label: Codable {
 
 // MARK: - Milestone
 struct Milestone: Codable {
-    let url: String
-    let htmlURL: String
-    let labelsURL: String
+    let url: String?
+    let htmlURL: String?
+    let labelsURL: String?
     let id: Int
-    let nodeID: String
+    let nodeID: String?
     let number: Int
-    let state, title, milestoneDescription: String
+    let state, title, milestoneDescription: String?
     let creator: Assignee
     let openIssues, closedIssues: Int
-    let createdAt, updatedAt, closedAt, dueOn: Date
+    let createdAt, updatedAt, closedAt, dueOn: String?
 
     enum CodingKeys: String, CodingKey {
         case url
@@ -139,9 +138,9 @@ struct Milestone: Codable {
 
 // MARK: - PullRequest
 struct PullRequest: Codable {
-    let url, htmlURL: String
-    let diffURL: String
-    let patchURL: String
+    let url, htmlURL: String?
+    let diffURL: String?
+    let patchURL: String?
 
     enum CodingKeys: String, CodingKey {
         case url

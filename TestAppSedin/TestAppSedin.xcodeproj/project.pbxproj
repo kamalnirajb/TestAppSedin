@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		883D231A08D13B0E69C3C3E0 /* Pods_TestAppSedin_TestAppSedinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B83004B4398427C3F94322 /* Pods_TestAppSedin_TestAppSedinUITests.framework */; };
+		8B580D50245CA37C00213486 /* AppCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B580D4F245CA37C00213486 /* AppCoreData.swift */; };
 		8B9DB5F3245C225A00770292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DB5F2245C225A00770292 /* AppDelegate.swift */; };
 		8B9DB5F5245C225A00770292 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DB5F4245C225A00770292 /* SceneDelegate.swift */; };
 		8B9DB5F7245C225A00770292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DB5F6245C225A00770292 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		4575154B176AC4CB4ADE66CD /* Pods-TestAppSedin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppSedin.release.xcconfig"; path = "Target Support Files/Pods-TestAppSedin/Pods-TestAppSedin.release.xcconfig"; sourceTree = "<group>"; };
 		8636AE1F736DE0EA3A461D60 /* Pods-TestAppSedin-TestAppSedinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppSedin-TestAppSedinUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestAppSedin-TestAppSedinUITests/Pods-TestAppSedin-TestAppSedinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88B83004B4398427C3F94322 /* Pods_TestAppSedin_TestAppSedinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAppSedin_TestAppSedinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B580D4F245CA37C00213486 /* AppCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreData.swift; sourceTree = "<group>"; };
 		8B9DB5EF245C225A00770292 /* TestAppSedin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppSedin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9DB5F2245C225A00770292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B9DB5F4245C225A00770292 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9DB626245C230B00770292 /* AppHttp.swift */,
+				8B580D4F245CA37C00213486 /* AppCoreData.swift */,
 				8B9DB627245C230B00770292 /* Issues.swift */,
 				8B9DB625245C230B00770292 /* UserCellTableViewCell.swift */,
 				8B9DB5F2245C225A00770292 /* AppDelegate.swift */,
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B580D50245CA37C00213486 /* AppCoreData.swift in Sources */,
 				8B9DB628245C230B00770292 /* UserCellTableViewCell.swift in Sources */,
 				8B9DB5F7245C225A00770292 /* ViewController.swift in Sources */,
 				8B9DB5FD245C225A00770292 /* TestAppSedin.xcdatamodeld in Sources */,
